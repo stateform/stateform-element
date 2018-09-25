@@ -35,10 +35,6 @@ export default {
         return {}
       }
     }
-  },
-  created() {
-    console.log(this.value)
-    console.log(this.multiple)
   }
 }
 </script>

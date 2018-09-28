@@ -1,6 +1,6 @@
 {
   "name": "@stateform/element",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "dist/stateform-element.common.js",
   "browser": "dist/stateform-element.umd.min.js",
   "files": [
@@ -27,9 +27,9 @@
     "vue": "^2.5.17"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^3.0.0",
-    "@vue/cli-plugin-eslint": "^3.0.0",
-    "@vue/cli-service": "^3.0.0",
+    "@vue/cli-plugin-babel": "^3.0.4",
+    "@vue/cli-plugin-eslint": "^3.0.4",
+    "@vue/cli-service": "^3.0.4",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.2",
     "vue-template-compiler": "^2.5.17"

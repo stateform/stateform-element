@@ -41,7 +41,7 @@ export default {
       }
     },
     updateValue(value) {
-      this.$emit('input', this.path, value)
+      this.$emit('input', value)
     }
   },
   created() {

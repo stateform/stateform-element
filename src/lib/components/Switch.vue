@@ -1,10 +1,10 @@
 <template>
   <ISwitch
     :value="value"
+    :active-text="onText"
+    :inactive-text="offText"
     @input="$emit('input', $event)"
   >
-    <span v-if="onText" slot="open">{{ onText }}</span>
-    <span v-if="offText"  slot="close"> {{ offText }}</span>
   </ISwitch>
 </template>
 

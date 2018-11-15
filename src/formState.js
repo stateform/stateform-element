@@ -139,7 +139,7 @@ export default {
       label: 'Switch',
       onText: 'onText',
       offText: 'offText',
-      value: false,
+      value: true,
     },
     {
       path: '/name',

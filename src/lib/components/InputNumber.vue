@@ -1,7 +1,7 @@
 <template>
   <InputNumber
     :value="value"
-    @input="$emit('input', $event)"
+    @input="$event !== value && $emit('input', $event)"
     :placeholder="placeholder"
   >
   </InputNumber>

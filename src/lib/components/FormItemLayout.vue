@@ -66,10 +66,11 @@ export default {
     if (layout === 'vertical') {
       return (
         <div class={Object.assign({
+          'el-form-item': true,
+          'is-error': error,
           'sf-item': true,
           'sf-item--vertical': true,
           'sf-item--error': error,
-          'ivu-form-item-error': error
         }, props.class)}>
           <Row>
             {Label}
@@ -89,10 +90,11 @@ export default {
           md={cols.mdItem}
           lg={cols.lgItem}
           class={Object.assign({
+            'el-form-item': true,
+            'is-error': error,
             'sf-item': true,
             'sf-item--inline': true,
             'sf-item--error': error,
-            'ivu-form-item-error': error
           }, props.class)}
         >
           {Label}
@@ -103,10 +105,11 @@ export default {
       return (
         <Row
           class={Object.assign({
+            'el-form-item': true,
+            'is-error': error,
             'sf-item': true,
             'sf-item--horizontal': true,
             'sf-item--error': error,
-            'ivu-form-item-error': error
           }, props.class)}
         >
           {Label}

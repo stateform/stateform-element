@@ -5,7 +5,7 @@
     :multiple="multiple"
     :placeholder="placeholder"
     :clearable="true"
-    @input="$emit('input', $event)"
+    @input="$emit('input', $event === '' ? undefined : $event)"
   >
     <Option 
       v-for="(val, key) in option" 

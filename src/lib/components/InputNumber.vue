@@ -1,15 +1,36 @@
 <template>
-  <InputNumber
+  <Input
+    :type="type || 'text'"
     :value="value"
-    @input="$event !== value && $emit('input', $event)"
+    :disabled="disabled"
+    @input="handleInputValue"
     :placeholder="placeholder"
   >
-  </InputNumber>
+    <span 
+      v-if="prepend" 
+      slot="prepend"
+    >
+      {{prepend}}
+    </span>
+    <span 
+      v-if="append" 
+      slot="append"
+    >
+      {{append}}
+    </span>
+  </Input>
 </template>
 
 <script>
 import FormItem from './FormItem.js'
 export default {
-  mixins: [FormItem]
+  mixins: [FormItem],
+  props: ['type','append', 'prepend'],
+  methods: {
+    handleInputValue(val) {
+      const numberVal = parseFloat(val) 
+      this.$emit('input', isNaN(numberVal) ? val : numberVal)
+    }
+  }
 }
 </script>

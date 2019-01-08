@@ -28,8 +28,10 @@ export default {
   props: ['type','append', 'prepend'],
   methods: {
     handleInputValue(val) {
-      const numberVal = parseFloat(val) 
-      this.$emit('input', isNaN(numberVal) ? val : numberVal)
+      if (/^[+-]?((\d+(\.\d*)?)|(\.\d+))$/.test(val)) {
+        val = parseFloat(val)
+      }
+      this.$emit('input', val)
     }
   }
 }

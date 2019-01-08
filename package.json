@@ -1,6 +1,6 @@
 {
   "name": "@stateform/element",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "main": "dist/stateform-element.common.js",
   "browser": "dist/stateform-element.umd.min.js",
   "files": [

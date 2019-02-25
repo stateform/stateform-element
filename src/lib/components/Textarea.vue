@@ -4,6 +4,7 @@
     :value="value"
     @input="$emit('input', $event)"
     :placeholder="placeholder"
+    :disabled="disabled"
   >
   </Input>
 </template>

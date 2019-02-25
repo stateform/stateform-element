@@ -2113,14 +2113,15 @@ var Switch_component = normalizeComponent(
 
 Switch_component.options.__file = "Switch.vue"
 /* harmony default export */ var Switch = (Switch_component.exports);
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules//.cache//vue-loader","cacheIdentifier":"3b714cca-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/lib/components/Textarea.vue?vue&type=template&id=723caf00&
-var Textareavue_type_template_id_723caf00_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('Input',{attrs:{"type":"textarea","value":_vm.value,"placeholder":_vm.placeholder},on:{"input":function($event){_vm.$emit('input', $event)}}})}
-var Textareavue_type_template_id_723caf00_staticRenderFns = []
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules//.cache//vue-loader","cacheIdentifier":"3b714cca-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/lib/components/Textarea.vue?vue&type=template&id=259cf9d8&
+var Textareavue_type_template_id_259cf9d8_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('Input',{attrs:{"type":"textarea","value":_vm.value,"placeholder":_vm.placeholder,"disabled":_vm.disabled},on:{"input":function($event){_vm.$emit('input', $event)}}})}
+var Textareavue_type_template_id_259cf9d8_staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/lib/components/Textarea.vue?vue&type=template&id=723caf00&
+// CONCATENATED MODULE: ./src/lib/components/Textarea.vue?vue&type=template&id=259cf9d8&
 
 // CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/lib/components/Textarea.vue?vue&type=script&lang=js&
+//
 //
 //
 //
@@ -2147,8 +2148,8 @@ var Textareavue_type_template_id_723caf00_staticRenderFns = []
 
 var Textarea_component = normalizeComponent(
   components_Textareavue_type_script_lang_js_,
-  Textareavue_type_template_id_723caf00_render,
-  Textareavue_type_template_id_723caf00_staticRenderFns,
+  Textareavue_type_template_id_259cf9d8_render,
+  Textareavue_type_template_id_259cf9d8_staticRenderFns,
   false,
   null,
   null,

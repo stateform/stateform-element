@@ -1,7 +1,7 @@
 <template>
   <Input
     type="textarea"
-    :value="value"
+    :value="value == undefined ? '' : value"
     @input="$emit('input', $event)"
     :placeholder="placeholder"
     :disabled="disabled"

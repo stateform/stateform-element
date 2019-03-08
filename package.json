@@ -1,6 +1,6 @@
 {
   "name": "@stateform/element",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "main": "dist/stateform-element.common.js",
   "browser": "dist/stateform-element.umd.min.js",
   "files": [
@@ -23,16 +23,16 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
-    "element-ui": "^2.4.9",
-    "vue": "^2.5.17"
+    "element-ui": "^2.6.1",
+    "vue": "^2.6.8"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^3.1.1",
-    "@vue/cli-plugin-eslint": "^3.1.5",
-    "@vue/cli-service": "^3.1.4",
+    "@vue/cli-plugin-babel": "^3.4.1",
+    "@vue/cli-plugin-eslint": "^3.4.1",
+    "@vue/cli-service": "^3.4.1",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.2",
-    "vue-template-compiler": "^2.5.17"
+    "vue-template-compiler": "^2.6.8"
   },
   "eslintConfig": {
     "root": true,

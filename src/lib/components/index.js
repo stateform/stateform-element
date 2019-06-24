@@ -5,6 +5,7 @@ import DateTimePicker from './DateTimePicker'
 import Form from './Form.vue'
 import Input from './Input.vue'
 import InputNumber from './InputNumber.vue'
+import InputPositiveInt from './InputPositiveInt'
 import List from './List.vue'
 import Map from './Map.vue'
 import Select from './Select.vue'
@@ -23,6 +24,7 @@ export {
   Form,
   Input,
   InputNumber,
+  InputPositiveInt,
   List,
   Map,
   Select,

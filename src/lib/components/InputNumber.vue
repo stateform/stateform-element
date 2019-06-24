@@ -1,8 +1,8 @@
 <template>
   <Input
-    :type="type || 'text'"
-    :value="value"
+  :type="type || 'text'"
     :disabled="disabled"
+    :value="inputValue"
     @input="handleInputValue"
     :placeholder="placeholder"
   >
@@ -26,13 +26,31 @@ import FormItem from './FormItem.js'
 export default {
   mixins: [FormItem],
   props: ['type','append', 'prepend'],
+  data() {
+    return {
+      inputValue: undefined
+    }
+  },
   methods: {
     handleInputValue(val) {
-      if (/^[+-]?((\d+(\.\d*)?)|(\.\d+))$/.test(val)) {
-        val = parseFloat(val)
+      if (val === '' || val === '+' || val === '-') {
+        this.inputValue = val
+        return this.$emit('input', undefined)
       }
-      this.$emit('input', val)
+      if (/^[+-]?((\d+(\.\d*)?)|(\.\d+))$/.test(val)) {
+        this.inputValue = val
+        this.$emit('input', parseFloat(val))
+      }
     }
+  },
+  created() {
+    this.$watch('value', (val) => {
+      if (parseFloat(this.inputValue) !== parseFloat(val)) {
+        this.inputValue = val
+      }
+    }, {
+      immediate: true
+    })
   }
 }
 </script>

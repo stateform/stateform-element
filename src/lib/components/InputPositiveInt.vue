@@ -1,8 +1,9 @@
 <template>
   <Input
     ref="input"
-    :type="type || 'text'"
-    v-model="inputValue"
+    type="text"
+    :value="inputValue"
+    @input="handleInputValue"
     :disabled="disabled"
     :placeholder="placeholder"
   >
@@ -30,7 +31,15 @@ export default {
       inputValue: undefined
     }
   },
-  props: ['type','append', 'prepend'],
+  props: ['append', 'prepend'],
+  methods: {
+    handleInputValue(val) {
+      if (val === '' || /^\d+$/.test(val)) {
+        this.inputValue = val
+        this.$emit('input', val)
+      }
+    }
+  },
   created() {
     this.$watch('value', (val) => {
       if (this.inputValue !== val) {
@@ -38,9 +47,6 @@ export default {
       }
     }, {
       immediate: true
-    })
-    this.$watch('inputValue', (val) => {
-      this.$emit('input', val)
     })
   }
 }

@@ -3607,12 +3607,12 @@ var Map_component = normalizeComponent(
 )
 
 /* harmony default export */ var Map = (Map_component.exports);
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"3d7ee4fa-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/lib/components/Select.vue?vue&type=template&id=7762c35f&
-var Selectvue_type_template_id_7762c35f_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('Select',{attrs:{"value":_vm.value,"disabled":_vm.disabled,"multiple":_vm.multiple,"placeholder":_vm.placeholder,"clearable":true},on:{"input":function($event){return _vm.$emit('input', $event === '' ? undefined : $event)}}},_vm._l((_vm.option),function(val,key){return _c('Option',{key:val,attrs:{"value":val,"label":key,"disabled":_vm.disabledItems[key]}})}),1)}
-var Selectvue_type_template_id_7762c35f_staticRenderFns = []
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"3d7ee4fa-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/lib/components/Select.vue?vue&type=template&id=4f3f7b59&
+var Selectvue_type_template_id_4f3f7b59_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('Select',{attrs:{"value":_vm.value,"disabled":_vm.disabled,"multiple":_vm.multiple,"placeholder":_vm.placeholder,"clearable":_vm.clearable},on:{"input":function($event){return _vm.$emit('input', $event === '' ? undefined : $event)}}},_vm._l((_vm.option),function(val,key){return _c('Option',{key:val,attrs:{"value":val,"label":key,"disabled":_vm.disabledItems[key]}})}),1)}
+var Selectvue_type_template_id_4f3f7b59_staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/lib/components/Select.vue?vue&type=template&id=7762c35f&
+// CONCATENATED MODULE: ./src/lib/components/Select.vue?vue&type=template&id=4f3f7b59&
 
 // CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/lib/components/Select.vue?vue&type=script&lang=js&
 //
@@ -3650,7 +3650,8 @@ var Selectvue_type_template_id_7762c35f_staticRenderFns = []
       default: function _default() {
         return {};
       }
-    }
+    },
+    clearable: {}
   }
 });
 // CONCATENATED MODULE: ./src/lib/components/Select.vue?vue&type=script&lang=js&
@@ -3665,8 +3666,8 @@ var Selectvue_type_template_id_7762c35f_staticRenderFns = []
 
 var Select_component = normalizeComponent(
   components_Selectvue_type_script_lang_js_,
-  Selectvue_type_template_id_7762c35f_render,
-  Selectvue_type_template_id_7762c35f_staticRenderFns,
+  Selectvue_type_template_id_4f3f7b59_render,
+  Selectvue_type_template_id_4f3f7b59_staticRenderFns,
   false,
   null,
   null,

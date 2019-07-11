@@ -4,7 +4,7 @@
     :disabled="disabled"
     :multiple="multiple"
     :placeholder="placeholder"
-    :clearable="true"
+    :clearable="clearable"
     @input="$emit('input', $event === '' ? undefined : $event)"
   >
     <Option 
@@ -34,7 +34,8 @@ export default {
       default() {
         return {}
       }
-    }
+    },
+    clearable: {}
   }
 }
 </script>

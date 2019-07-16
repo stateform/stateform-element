@@ -3,6 +3,7 @@
     ref="input"
     :type="type || 'text'"
     v-model="inputValue"
+    :autocomplete="autocomplete"
     :disabled="disabled"
     :placeholder="placeholder"
   >
@@ -30,7 +31,7 @@ export default {
       inputValue: undefined
     }
   },
-  props: ['type','append', 'prepend'],
+  props: ['type','append', 'prepend', 'autocomplete'],
   created() {
     this.$watch('value', (val) => {
       if (this.inputValue !== val) {

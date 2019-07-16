@@ -3,6 +3,8 @@
     ref="input"
     type="text"
     :value="inputValue"
+    :autocomplete="autocomplete"
+    :name="name"
     @input="handleInputValue"
     :disabled="disabled"
     :placeholder="placeholder"
@@ -31,7 +33,7 @@ export default {
       inputValue: undefined
     }
   },
-  props: ['append', 'prepend'],
+  props: ['append', 'prepend', 'autocomplete', 'name'],
   methods: {
     handleInputValue(val) {
       if (val === '' || /^\d+$/.test(val)) {

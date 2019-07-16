@@ -3,6 +3,8 @@
   :type="type || 'text'"
     :disabled="disabled"
     :value="inputValue"
+    :autocomplete="autocomplete"
+    :name="name"
     @input="handleInputValue"
     :placeholder="placeholder"
   >
@@ -25,7 +27,7 @@
 import FormItem from './FormItem.js'
 export default {
   mixins: [FormItem],
-  props: ['type','append', 'prepend'],
+  props: ['type','append', 'prepend', 'autocomplete', 'name'],
   data() {
     return {
       inputValue: undefined

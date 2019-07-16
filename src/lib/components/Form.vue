@@ -1,6 +1,6 @@
 <template>
   <Row class="sf-item--Form">
-    <Form>
+    <Form @submit.native="handleSubmit">
         <slot name="default"></slot>
         <FormItemLayout 
           class="sf-footer"
@@ -11,7 +11,7 @@
           <Button 
             class="sf-footer__submit"
             v-if="footer.showSubmit === true"
-            @click="$emit('submit')" 
+            native-type="submit"
             type="primary"
             :disabled="footer.disableSubmit"
           >
@@ -41,5 +41,11 @@ export default {
     FormItemLayout
   },
   props: ['layout', 'cols', 'footer'],
+  methods: {
+    handleSubmit(event) {
+      event.preventDefault()
+      this.$emit('submit')
+    }
+  }
 }
 </script>

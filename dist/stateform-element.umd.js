@@ -3239,14 +3239,15 @@ var Form_component = normalizeComponent(
 )
 
 /* harmony default export */ var Form = (Form_component.exports);
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"3d7ee4fa-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/lib/components/Input.vue?vue&type=template&id=9da83112&
-var Inputvue_type_template_id_9da83112_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('Input',{ref:"input",attrs:{"type":_vm.type || 'text',"disabled":_vm.disabled,"placeholder":_vm.placeholder},model:{value:(_vm.inputValue),callback:function ($$v) {_vm.inputValue=$$v},expression:"inputValue"}},[(_vm.prepend)?_c('span',{attrs:{"slot":"prepend"},slot:"prepend"},[_vm._v("\n    "+_vm._s(_vm.prepend)+"\n  ")]):_vm._e(),(_vm.append)?_c('span',{attrs:{"slot":"append"},slot:"append"},[_vm._v("\n    "+_vm._s(_vm.append)+"\n  ")]):_vm._e()])}
-var Inputvue_type_template_id_9da83112_staticRenderFns = []
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"3d7ee4fa-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/lib/components/Input.vue?vue&type=template&id=456d237e&
+var Inputvue_type_template_id_456d237e_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('Input',{ref:"input",attrs:{"type":_vm.type || 'text',"autocomplete":_vm.autocomplete,"disabled":_vm.disabled,"placeholder":_vm.placeholder},model:{value:(_vm.inputValue),callback:function ($$v) {_vm.inputValue=$$v},expression:"inputValue"}},[(_vm.prepend)?_c('span',{attrs:{"slot":"prepend"},slot:"prepend"},[_vm._v("\n    "+_vm._s(_vm.prepend)+"\n  ")]):_vm._e(),(_vm.append)?_c('span',{attrs:{"slot":"append"},slot:"append"},[_vm._v("\n    "+_vm._s(_vm.append)+"\n  ")]):_vm._e()])}
+var Inputvue_type_template_id_456d237e_staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/lib/components/Input.vue?vue&type=template&id=9da83112&
+// CONCATENATED MODULE: ./src/lib/components/Input.vue?vue&type=template&id=456d237e&
 
 // CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/lib/components/Input.vue?vue&type=script&lang=js&
+//
 //
 //
 //
@@ -3278,7 +3279,7 @@ var Inputvue_type_template_id_9da83112_staticRenderFns = []
       inputValue: undefined
     };
   },
-  props: ['type', 'append', 'prepend'],
+  props: ['type', 'append', 'prepend', 'autocomplete'],
   created: function created() {
     var _this = this;
 
@@ -3306,8 +3307,8 @@ var Inputvue_type_template_id_9da83112_staticRenderFns = []
 
 var Input_component = normalizeComponent(
   components_Inputvue_type_script_lang_js_,
-  Inputvue_type_template_id_9da83112_render,
-  Inputvue_type_template_id_9da83112_staticRenderFns,
+  Inputvue_type_template_id_456d237e_render,
+  Inputvue_type_template_id_456d237e_staticRenderFns,
   false,
   null,
   null,
